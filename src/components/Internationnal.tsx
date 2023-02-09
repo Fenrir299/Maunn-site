@@ -17,7 +17,7 @@ const International: React.FC<InternationalProps> = ({ logos }) => {
 
   return (
     <section className="container py-32  mx-auto place-items-center">
-      <div style={{ overflowX: "scroll", whiteSpace: "nowrap" }}>
+      <div style={{ overflowX: "hidden", whiteSpace: "nowrap" }}>
         {logos.map((logo, i) => (
           <img
             alt="{logo}"

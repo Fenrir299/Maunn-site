@@ -9,7 +9,7 @@ import {
 } from "@heroicons/react/24/outline";
 
 import Maunn from "../assets/maunn.png";
-import { Link, Element } from "react-scroll";
+import { Element } from "react-scroll";
 
 interface SectorProps {
   handleSetActive: (to: React.SetStateAction<string>) => void;
@@ -19,7 +19,7 @@ const Sector: React.FC<SectorProps> = ({ handleSetActive }) => {
   return (
     <Element name="Sector">
       <section
-        className="align-middle lg:h-full justify-center py-12 items-center bg-white dark:bg-gray-800
+        className="container m-auto align-middle lg:h-full justify-center py-12 items-center bg-white dark:bg-gray-800
         text-right text-gray-800 dark:text-white flex-row"
         style={{
           backgroundImage: `url(${Maunn})`,
@@ -30,6 +30,9 @@ const Sector: React.FC<SectorProps> = ({ handleSetActive }) => {
         }}
       >
         <div className="align-middle lg:h-full justify-center py-12 items-center">
+          <h2 className="w-full text-center text-3xl font-bold">
+            Nos Secteurs
+          </h2>
           <div className="grid grid-cols-1 p-12 gap-9 align-middle sm:grid-cols-2 lg:grid-cols-3">
             <div
               className="p-12 text-center backdrop-blur-xl  border-2 dark:border-gray-600
@@ -73,22 +76,7 @@ const Sector: React.FC<SectorProps> = ({ handleSetActive }) => {
             </div>
           </div>
         </div>
-        <div className="text-center">
-          <Link
-            activeClass="active"
-            className="border-4 h-12 text-gray-800 dark:text-white 
-            font-bold text-2xl hover:text-gray-300 
-            transition duration-150 ease-in-out py-3 px-6 rounded-full bg-transparent
-            border-gray-800 dark:border-white hover:bg-white hover:blur-2xl"
-            to="client"
-            spy={true}
-            smooth={true}
-            duration={500}
-            onSetActive={handleSetActive}
-          >
-            Découvrir
-          </Link>
-        </div>
+        <div className="text-center"></div>
       </section>
     </Element>
   );

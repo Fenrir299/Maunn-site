@@ -38,7 +38,7 @@ const Client: React.FC<ClientProps> = ({ handleSetActive }) => {
           <Link
             activeClass="active"
             className="border-4 h-12 text-gray-800 dark:text-white mt-4 font-bold text-2xl hover:text-gray-300 transition duration-150 ease-in-out py-3 px-6 rounded-full bg-transparent border-gray-800 dark:border-white hover:bg-white hover:blur-2xl"
-            to="innovation"
+            to="Sector"
             spy={true}
             smooth={true}
             duration={500}
