@@ -7,11 +7,7 @@ import {
   BuildingLibraryIcon,
   ShoppingCartIcon,
 } from "@heroicons/react/24/outline";
-import {
-  LightBulbIcon,
-  ClockIcon,
-  ChatBubbleBottomCenterTextIcon,
-} from "@heroicons/react/24/outline";
+
 import Maunn from "../assets/maunn.png";
 import { Link, Element } from "react-scroll";
 

@@ -7,13 +7,15 @@ import Innovation from "../components/Innovation";
 import Sector from "../components/Sectors";
 import International from "../components/Internationnal";
 import Main from "../components/Main";
-import logo1 from "../assets/maunn-title.png";
-import logo2 from "../assets/maunn.png";
-import Qonto from "../assets/qonto.png";
+import Maunn from "../assets/maunn-title.png";
+
 import Cdiscount from "../assets/cdiscount.png";
 import Pfizer from "../assets/Pfizer.png";
 import Airbus from "../assets/Airbus.png";
 import Aventis from "../assets/aventis.png";
+import Footer from "../components/Footer";
+import Dassault from "../assets/dassault.png";
+import Merck from "../assets/merck.png";
 
 const Hero: React.FC = () => {
   const [activeSection, setActiveSection] = useState("section1");
@@ -40,18 +42,18 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="bg-white dark:bg-gray-800">
       <Band />
       <Navbar />
-      <div className="dark:bg-gray-800 bg-white">
-        <Main handleSetActive={handleSetActive} />
-        <Innovation handleSetActive={handleSetActive} />
-        <Clients handleSetActive={handleSetActive} />
-        <Sector handleSetActive={handleSetActive} />
-        <International
-          logos={[logo1, logo2, Aventis, Cdiscount, Pfizer, Airbus]}
-        />
-      </div>
+
+      <Main handleSetActive={handleSetActive} />
+      <Innovation handleSetActive={handleSetActive} />
+      <Clients handleSetActive={handleSetActive} />
+      <Sector handleSetActive={handleSetActive} />
+      <International
+        logos={[Maunn, Aventis, Cdiscount, Pfizer, Airbus, Dassault, Merck]}
+      />
+      <Footer handleSetActive={handleSetActive} />
     </div>
   );
 };

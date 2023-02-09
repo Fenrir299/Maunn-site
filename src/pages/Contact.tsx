@@ -22,6 +22,7 @@ const Contact: React.FC = () => {
 
   return (
     <div>
+      <Navbar />
       <div className="flex items-center justify-center h-screen">
         <form className="w-full max-w-sm" onSubmit={handleSubmit}>
           <div className="md:flex md:items-center mb-6">
