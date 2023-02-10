@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-
+import ContactForm from "../components/ContactForm";
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -23,6 +23,8 @@ const Contact: React.FC = () => {
   return (
     <div>
       <Navbar />
+      <ContactForm />
+
       <div className="flex items-center justify-center h-screen">
         <form className="w-full max-w-sm" onSubmit={handleSubmit}>
           <div className="md:flex md:items-center mb-6">

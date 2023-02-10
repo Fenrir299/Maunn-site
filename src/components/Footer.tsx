@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Element } from "react-scroll";
 import LogoBlack from "../assets/logo-uni-black.png";
+import ContactForm from "./ContactForm";
 
 interface FooterProps {
   handleSetActive: (to: React.SetStateAction<string>) => void;

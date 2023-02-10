@@ -3,6 +3,7 @@ import { Events, scrollSpy } from "react-scroll";
 import Navbar from "../components/Navbar";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
+import Presentation from "../components/Presentation";
 
 const About: React.FC = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -32,7 +33,7 @@ const About: React.FC = () => {
   return (
     <div className="bg-white dark:bg-gray-800">
       <Navbar />
-      <Main handleSetActive={handleSetActive} />
+      <Presentation handleSetActive={handleSetActive} />
       <Footer handleSetActive={handleSetActive} />
     </div>
   );
